@@ -1,0 +1,102 @@
+# OS generated files #
+######################
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+# Saas cache #
+##############
+
+.sass-cache
+
+
+# Sublime Text 2 or 3 specific files #
+#################################
+
+*.sublime-project
+*.sublime-workspace
+
+
+# Other text editor folders or files #
+######################################
+
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.komodoproject
+.komodotools
+_notes
+dwsync.xml
+
+
+# Ignore Node Modules #
+#######################
+
+node_modules/
+
+
+# Folders to Ignore #
+#####################
+
+.tmp/
+
+# Ignore compiled CSS from repository
+
+styles/
+styles/*.css
+styles/*.map
+
+
+# Misc files to ignore #
+########################
+
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
