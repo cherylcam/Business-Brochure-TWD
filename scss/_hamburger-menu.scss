@@ -1,0 +1,149 @@
+// Hamburger Menu Styles
+
+// use only the available space inside the 400x400 frame
+.menu {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 2%;
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 5px;
+  padding:0;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu:focus {
+    outline: none;
+}
+
+// Variables for Hamburger Menu
+$width-bar: 30px;
+$height-bar: 4px;
+$color-bar: black;
+$border-radius: 4px;
+$shadow-active: 2px 2px 12px 4px rgba(white, 0.2);
+$offsetY: 10px;
+$delay: .5s;
+$speed: $delay * 2;
+$easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+#bar {
+    margin: 0 auto;
+	display: block;
+	position: relative;
+	width: $width-bar;
+	height: $height-bar;
+	background-color: $color-bar;
+	border-radius: $border-radius;
+	box-shadow: $shadow-active;
+	cursor: pointer;
+	transition-delay: $delay;
+	
+	&.active {
+		background-color: transparent;
+        
+		&:before {
+			animation: animate-top-line-open $speed $easing forwards;
+		}
+		
+		&:after {
+			animation: animate-bottom-line-open $speed $easing forwards;
+		}
+	}
+	
+	&:before {
+			animation: animate-top-line-close $speed $easing forwards;
+	}
+	
+	&:after {
+			animation: animate-bottom-line-close $speed $easing forwards;
+	}
+	
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: $height-bar;
+		background-color: $color-bar;
+		border-radius: $border-radius;
+		box-shadow: $shadow-active;
+	}
+	
+	&:before {
+		top: -$offsetY;
+	}
+	
+	&:after {
+		top: $offsetY;
+	}
+}
+
+@keyframes animate-top-line-open {
+	
+	0% {
+		transform: translate(0, 0) rotate(0);
+	}
+	
+	50% {
+		transform: translate(0, $offsetY) rotate(0);
+	}
+	
+	100% {
+		transform: translate(0, $offsetY) rotate(-45deg);
+	}
+}
+
+@keyframes animate-top-line-close {
+	
+	0% {
+		transform: translate(0, $offsetY) rotate(-45deg);
+	}
+	
+	50% {
+		transform: translate(0, $offsetY) rotate(0);
+	}
+	
+	100% {
+		transform: translate(0, 0) rotate(0);
+	}
+}
+
+@keyframes animate-bottom-line-open {
+	
+	0% {
+		transform: translate(0, 0) rotate(0);
+	}
+	
+	50% {
+		transform: translate(0, -$offsetY) rotate(0);
+	}
+	
+	100% {
+		transform: translate(0, -$offsetY) rotate(-135deg);
+	}
+}
+
+@keyframes animate-bottom-line-close {
+
+	0% {
+		transform: translate(0, -$offsetY) rotate(-135deg);
+	}
+	
+	50% {
+		transform: translate(0, -$offsetY) rotate(0);
+	}
+	
+	100% {
+		transform: translate(0, 0) rotate(0);
+	}
+}
+
+
+// Navbar in hamburger menu
+
