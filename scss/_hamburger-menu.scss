@@ -1,24 +1,5 @@
 // Hamburger Menu Styles
 
-// use only the available space inside the 400x400 frame
-.menu {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 2%;
-  background-color: transparent;
-  border-color: transparent;
-  margin-top: 5px;
-  padding:0;
-  overflow: hidden;
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.menu:focus {
-    outline: none;
-}
 
 // Variables for Hamburger Menu
 $width-bar: 30px;
@@ -30,6 +11,26 @@ $offsetY: 10px;
 $delay: .5s;
 $speed: $delay * 2;
 $easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+// use only the available space inside the 400x400 frame
+
+.menu {
+  width: 40px;
+  height: auto;
+  background-color: transparent;
+  border-color: transparent;
+	margin: 0;
+  padding:0;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	line-height: $header-height;
+}
+
+.menu:focus {
+    outline: none;
+}
 
 #bar {
     margin: 0 auto;
