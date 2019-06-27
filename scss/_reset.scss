@@ -1,0 +1,22 @@
+/* ******************************
+    Images - Max-Width Reset
+****************************** */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ******************************
+        Box Sizing Reset
+****************************** */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
