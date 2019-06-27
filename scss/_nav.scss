@@ -14,7 +14,7 @@ header {
     }
 
     .main-nav {
-        display: block;
+        display: none;
         height: $header-height;
         flex: 3;
 
@@ -34,7 +34,7 @@ header {
             font-size: $header-font-size;
             color: black;
             transition: all 0.3s ease;
-            font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+            font-family: $font-stack;
 
             &:hover {
                 text-decoration: none;
@@ -45,7 +45,7 @@ header {
     }
 
     .sub-nav {
-        display: block;
+        display: none;
         line-height: $header-height;
                 
         a {
@@ -65,5 +65,5 @@ header {
             margin: 0 10px 0;
         }
     }
-
+    
 }

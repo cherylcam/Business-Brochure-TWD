@@ -1,0 +1,59 @@
+@mixin home-article-style {
+    img {
+        width: 320px;
+        height: 850px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        span {
+            padding: 20px 10px;
+        }
+
+        a {
+            text-align: center;
+        }
+
+        button {
+            background-color: $brand-color;
+            border: none;
+            color: white;
+            padding: 5px 25px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}
+
+@mixin home-section-style {
+    // display: grid;
+    // grid-template-columns: auto;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 50px;
+    height: 100vh;
+}
+
+@mixin home-section-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        article {
+            grid-area: article;
+        }
+
+        img {
+            grid-area: image;
+        }
+}

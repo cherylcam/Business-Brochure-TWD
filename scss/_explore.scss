@@ -1,0 +1,48 @@
+.explore{
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+.workshops-events {
+    border: 1px solid black;
+
+    @include home-section-style;
+    @include home-article-style;
+}
+
+.artists {
+    border: 1px solid black;
+
+    @include home-section-style;
+    @include home-article-style;
+}
+
+.buyer-guide {
+    border: 1px solid black;
+    
+    @include home-section-style;
+    @include home-article-style;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: auto;
+
+    @include home-article-style;
+}
+
+@media only screen and (min-width: 1024px){
+    .workshops-events {
+        @include home-section-grid;
+        grid-template-areas:
+        "image      image   article" ;
+    }
+
+    .artists {
+        @include home-section-grid;
+        grid-template-areas:
+        "article    image   image";
+    }
+}
