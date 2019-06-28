@@ -1,0 +1,29 @@
+.categories {
+
+    display: flex;
+    flex-direction: column;
+
+    @include home-article-style;
+
+    article {
+        align-items: center;
+        margin-bottom: 50px;
+
+        img {
+            width: 300px;
+            height: auto;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 25px 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .categories {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }    
+}

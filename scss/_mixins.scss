@@ -1,26 +1,23 @@
 @mixin home-article-style {
+    margin-bottom: 50px;
 
     img {
-        width: 320px;
-        height: 850px;
+        margin-bottom: 50px;
     }
 
     article {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        text-align: center;
+        align-items: center;
+
         h1 {
             font-size: 2em;
-            text-align: center;
         }
 
         span {
-            padding: 20px 10px;
-        }
-
-        a {
-            text-align: center;
+            padding: 50px 50px;
         }
 
         button {
@@ -38,12 +35,9 @@
 }
 
 @mixin home-section-style {
-    // display: grid;
-    // grid-template-columns: auto;
     margin: 0 auto;
     width: 100%;
-    padding-bottom: 50px;
-    height: 50vh;
+    height: 100vh;
 }
 
 @mixin home-section-grid {

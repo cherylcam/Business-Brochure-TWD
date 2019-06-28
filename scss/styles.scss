@@ -1,8 +1,15 @@
-
 @import 'mixins';
 @import 'variables';
 @import 'reset';
+
+// Header
 @import 'nav';
-@import 'explore';
 @import 'hamburger-menu';
+
+// Home Page
 @import 'slideshow.scss';
+@import 'explore';
+@import 'buyer-guide';
+@import 'categories';
+
+
