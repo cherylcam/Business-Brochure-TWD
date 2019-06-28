@@ -3,7 +3,6 @@
 
 
 .slideshow {
-    border: 5px solid red;
     max-width: 100%;
     position: relative;
     margin: 0 auto;
@@ -22,58 +21,72 @@
 .slideshow-next {
     cursor: pointer;
     position: absolute;
-    top: 9%;
-    padding: 7px;
-    border: red 2px solid;
+    top: 40%;
+    padding: 10px;
+    margin: 2px;
     width: auto;
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    transition: 0.7s ease;
-    font-size: 30px;
+    outline: red;
+    color: white;
+    transition: 0.7s ease;  
+    font-size: 1.5em;
     border-radius: 100px;
 }
 
 .slideshow-next {
     right: 0;
-    border-radius: 100px;
-
 }
 
 .slideshow-prev:hover,
 .slideshow-next:hover {
-    background-color: rgba(255, 255, 255, 0.705);
+    background-color: rgba(255, 255, 255, 0.356);
 }
 
 .slideshow-caption h2 {
     font-size: $header-font-size;
     padding: 10px;
     position: absolute;
-    bottom: 2%;
+    bottom: 10%;
     width: 100%;
     text-align: center;
+    color: white;
+    font-size: 1.5em;
 }
 
 .dot {
     cursor: pointer;
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     margin: 0px 5px;
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: white;
     display: inline-block;
-    transition: background-color 0.7s ease;
+    transition: background-color 1s ease;
+    
 }
 
 .active, .dot:hover {
-    background-color: rgba(255, 255, 255, 0.705);
+    background-color: rgba(202, 202, 202, 0.705);
 }
 
 .slideshow-img {
     animation-name: fade;
-    animation-duration: 1.7s;
+    animation-duration: 2s;
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.7s;
+    -webkit-animation-duration: 2s;
 }
+
+.slideshow-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
 
 @-webkit-keyframes fade {
     from {opacity: .5}
