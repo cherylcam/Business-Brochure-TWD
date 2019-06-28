@@ -1,4 +1,5 @@
 @mixin home-article-style {
+
     img {
         width: 320px;
         height: 850px;
@@ -42,13 +43,11 @@
     margin: 0 auto;
     width: 100%;
     padding-bottom: 50px;
-    height: 100vh;
+    height: 50vh;
 }
 
 @mixin home-section-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
         article {
             grid-area: article;
         }
