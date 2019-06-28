@@ -18,19 +18,20 @@
 
         span {
             padding: 50px 50px;
+            text-align: left;
         }
 
-        button {
-            background-color: $brand-color;
-            border: none;
-            color: white;
-            padding: 5px 25px;
-            transition: all 0.3s ease;
+        // button {
+        //     background-color: $brand-color;
+        //     border: none;
+        //     color: white;
+        //     padding: 5px 25px;
+        //     transition: all 0.3s ease;
 
-            &:hover {
-                background-color: black;
-            }
-        }
+        //     &:hover {
+        //         background-color: black;
+        //     }
+        // }
     }
 }
 
