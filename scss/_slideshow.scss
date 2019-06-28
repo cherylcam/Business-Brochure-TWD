@@ -1,0 +1,19 @@
+// Slide show on index.html
+
+.slideshow {
+    border: 5px solid red;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slideshow-prev, 
+.slideshow-next {
+    position: absolute;
+    top: 50%;
+    border: red 2px solid;
+    width: auto;
+    font-weight: bold;
+    color: black;
+    font-size: 100px;
+}
