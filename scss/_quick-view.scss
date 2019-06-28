@@ -1,0 +1,52 @@
+.quick-view {
+    display: none;
+    // position: absolute;
+    // border: 1px solid black;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // background-color: white;
+    // width: 75%;
+    // height: 75%;
+    // picture {width: 100%; height: 100%; border: 1px solid black;}
+
+    // // Popup
+    // grid-template-areas:
+    // "header header"
+    // "image  table";
+
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: $header-height 1fr;
+
+    // .quick-view-description {
+    //     grid-area: table;
+    // }
+
+    // picture {
+    //     grid-area: image;
+    // }
+}
+
+.row {
+    margin: 0;
+}
+
+.guitar {
+    display: grid;
+    margin: 0 auto 50px;
+    @include button;
+    border-radius: 0;
+
+    button {
+        width: auto;
+    }
+    picture {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+    }
+
+    h2 {
+
+    }
+}
