@@ -21,28 +21,45 @@
 
 .buyer-guide {
     border: 1px solid black;
-    
+
     @include home-section-style;
     @include home-article-style;
 }
 
 .categories {
-    display: grid;
-    grid-template-columns: auto;
-
     @include home-article-style;
+    flex-direction: column;
 }
 
 @media only screen and (min-width: 1024px){
     .workshops-events {
+        height: 100vh;
         @include home-section-grid;
         grid-template-areas:
         "image      image   article" ;
+        
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .artists {
+        height: 100vh;
         @include home-section-grid;
         grid-template-areas:
         "article    image   image";
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .buyer-guide {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "left middle middle middle right";
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+        article {
+            grid-area: middle;
+        }  
     }
 }
