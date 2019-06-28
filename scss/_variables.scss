@@ -5,6 +5,18 @@ $brand-color: #660000;
 // Nav Variables
 $header-height: 100px;
 $header-font-size: 1.2em;
+$social-media-size: 2em;
 
 // Font Stack
 $font-stack: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+// Variables for Hamburger Menu
+$width-bar: 30px;
+$height-bar: 4px;
+$color-bar: black;
+$border-radius: 4px;
+$shadow-active: 2px 2px 12px 4px rgba(white, 0.2);
+$offsetY: 10px;
+$delay: .5s;
+$speed: $delay * 2;
+$easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);

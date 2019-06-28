@@ -1,10 +1,13 @@
+// Header + Navbar Styles For Mobile
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-
     .logo {
         line-height: $header-height;
+        z-index: 2;
+        display: block;
 
         svg {
             width: 115px;
@@ -15,18 +18,29 @@ header {
 
     .main-nav {
         display: none;
-        height: $header-height;
-        flex: 3;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: white;
+        margin-top: $header-height;
+        height: calc(100vh - 100px);
 
         @at-root ul {
             display: flex;
+            flex-direction: column;
+            padding: 0;
             margin: 0;
-            padding: 0 100px;
         }
+
+        // @at-root li{
+        //     // border-top: 1px solid black;
+        // }
 
         @at-root ul li {
             list-style: none;
-            padding: 0 30px;
+            text-align: center;
         }
 
         @at-root ul li a {
@@ -42,30 +56,107 @@ header {
             }
         }
 
-    }
+        .social-media {
+            font-size: $social-media-size;
+            text-align: center;
+            line-height: $header-height;
 
-    .sub-nav {
-        display: none;
-        line-height: $header-height;
+            .fab {
                 
-        a {
-            background-color: black;
-            padding: 2.5px 10px;
-            color: white;
-            margin: 0 10px 0;
-            text-decoration: none;
-            transition: all 0.3s ease;
+                
+                &:hover {
+                    text-decoration: none;
+                    color: $brand-color;
+                }
+            }
 
-            &:hover {
-                background-color: $brand-color;
+            .fa-instagram {
+                margin: 0 20px;
             }
         }
 
-        select {
-            margin: 0 10px 0;
+    }
+
+    .sub-nav {
+        line-height: $header-height;
+        font-size: 1.5em;
+        width: 100%;
+        text-align: right;
+
+        .location-icon {
+            color: black;
+            margin-right: 20px;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $brand-color;
+            }
+        }
+
+        .find-a-dealer, select {
+            display: none;
         }
     }
 }
 .show .main-nav {
     display: block;
 }
+
+
+// Main Nav for desktop
+
+// .main-nav {
+//     display: none;
+//     height: $header-height;
+//     flex: 3;
+
+//     @at-root ul {
+//         display: flex;
+//         margin: 0;
+//         padding: 0 100px;
+//     }
+
+//     @at-root ul li {
+//         list-style: none;
+//         padding: 0 30px;
+//     }
+
+//     @at-root ul li a {
+//         line-height: $header-height;
+//         font-size: $header-font-size;
+//         color: black;
+//         transition: all 0.3s ease;
+//         font-family: $font-stack;
+
+//         &:hover {
+//             text-decoration: none;
+//             color: $brand-color;
+//         }
+//     }
+
+// }
+
+
+// Sub Nav Desktop
+// .sub-nav {
+        
+//     line-height: $header-height;
+            
+//     a {
+//         background-color: black;
+//         padding: 2.5px 10px;
+//         color: white;
+//         margin: 0 10px 0;
+//         text-decoration: none;
+//         transition: all 0.3s ease;
+
+//         &:hover {
+//             background-color: $brand-color;
+//         }
+//     }
+
+//     select {
+//         margin: 0 10px 0;
+//     }
+// }

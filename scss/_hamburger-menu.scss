@@ -1,20 +1,7 @@
 // Hamburger Menu Styles
 
-
-// Variables for Hamburger Menu
-$width-bar: 30px;
-$height-bar: 4px;
-$color-bar: black;
-$border-radius: 4px;
-$shadow-active: 2px 2px 12px 4px rgba(white, 0.2);
-$offsetY: 10px;
-$delay: .5s;
-$speed: $delay * 2;
-$easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-// use only the available space inside the 400x400 frame
-
 .menu {
+	z-index: 2;
   width: 40px;
   height: auto;
   background-color: transparent;
@@ -33,7 +20,7 @@ $easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 #bar {
-    margin: 0 auto;
+  margin: 0 auto;
 	display: block;
 	position: relative;
 	width: $width-bar;
