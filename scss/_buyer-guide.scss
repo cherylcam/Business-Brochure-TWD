@@ -1,0 +1,45 @@
+.buyer-guide {
+    @include home-section-style;
+    @include home-article-style;
+
+    background-color: $brand-color;
+    height: 50%;
+
+    article {
+
+        padding: 50px 0;
+
+        h1 {
+            color: white;
+        }
+
+        span {
+            color: white;
+        }
+
+        button {
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+
+            &:hover {
+                background-color: black;
+            }
+        }    
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .buyer-guide {
+        display: grid;
+        grid-template-areas:
+        "left middle middle middle right";
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+        article {
+            padding: 50px 0;
+            grid-area: middle;
+        }
+    }
+}

@@ -1,65 +1,41 @@
-.explore{
-    h1 {
-        font-size: 2em;
-        text-align: center;
-    }
-}
-
 .workshops-events {
-    border: 1px solid black;
-
     @include home-section-style;
     @include home-article-style;
+    height: 50%;
 }
 
 .artists {
-    border: 1px solid black;
+
 
     @include home-section-style;
     @include home-article-style;
-}
 
-.buyer-guide {
-    border: 1px solid black;
-
-    @include home-section-style;
-    @include home-article-style;
-}
-
-.categories {
-    @include home-article-style;
-    flex-direction: column;
+    height: 50%;
 }
 
 @media only screen and (min-width: 1024px){
     .workshops-events {
-        height: 100vh;
         @include home-section-grid;
         grid-template-areas:
         "image      image   article" ;
-        
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+
+        img {
+            margin: 0;
+        }
+
     }
 
     .artists {
-        height: 100vh;
         @include home-section-grid;
         grid-template-areas:
         "article    image   image";
-
         grid-template-columns: 1fr 1fr 1fr;
-    }
+        margin: 0;
 
-    .buyer-guide {
-        height: 100vh;
-        display: grid;
-        grid-template-areas:
-        "left middle middle middle right";
-
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        
-        article {
-            grid-area: middle;
-        }  
+        img {
+            margin: 0;
+        }
     }
 }
