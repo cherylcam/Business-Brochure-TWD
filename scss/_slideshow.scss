@@ -1,5 +1,7 @@
 // Slide show on index.html
 
+
+
 .slideshow {
     border: 5px solid red;
     max-width: 100%;
@@ -7,13 +9,79 @@
     margin: 0 auto;
 }
 
+.slides {
+    // display: none;
+}
+
+.slideshow-img {
+    vertical-align: middle;
+    
+}
+
 .slideshow-prev, 
 .slideshow-next {
+    cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 9%;
+    padding: 7px;
     border: red 2px solid;
     width: auto;
     font-weight: bold;
-    color: black;
-    font-size: 100px;
+    color: rgb(0, 0, 0);
+    transition: 0.7s ease;
+    font-size: 30px;
+    border-radius: 100px;
 }
+
+.slideshow-next {
+    right: 0;
+    border-radius: 100px;
+
+}
+
+.slideshow-prev:hover,
+.slideshow-next:hover {
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.slideshow-caption h2 {
+    font-size: $header-font-size;
+    padding: 10px;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    background-color: rgba(0, 0, 0, 0.705);
+    display: inline-block;
+    transition: background-color 0.7s ease;
+}
+
+.active, .dot:hover {
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.slideshow-img {
+    animation-name: fade;
+    animation-duration: 1.7s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.7s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
