@@ -20,3 +20,6 @@ $offsetY: 10px;
 $delay: .5s;
 $speed: $delay * 2;
 $easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+// Link Hover Selector
+$link-hover-selector: '&:hover, &:focus, &:active';

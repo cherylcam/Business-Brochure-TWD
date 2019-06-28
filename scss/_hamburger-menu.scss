@@ -1,7 +1,6 @@
 // Hamburger Menu Styles
 
 .menu {
-	z-index: 2;
   width: 40px;
   height: auto;
   background-color: transparent;
@@ -131,6 +130,11 @@
 	}
 }
 
+// Hide Hamburger Menu For Desktop 
 
-// Navbar in hamburger menu
+// @media only screen and (min-width: 1024px) {
+// 	.menu {
+// 		display: none;
+// 	}
+// }
 
