@@ -1,6 +1,7 @@
 .buyer-guide {
     @include home-section-style;
     @include home-article-style;
+    @include button;
 
     background-color: $brand-color;
     height: 50%;

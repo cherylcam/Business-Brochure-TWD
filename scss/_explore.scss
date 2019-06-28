@@ -1,3 +1,7 @@
+.explore {
+    @include button;
+}
+
 .workshops-events {
     @include home-section-style;
     @include home-article-style;
