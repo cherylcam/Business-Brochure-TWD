@@ -1,0 +1,28 @@
+// About Introduction Styles
+
+.about-intro {
+    @include home-section-style;
+    @include home-article-style;
+
+    height: 50%;
+
+    article {
+        padding: 50px 0;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .about-intro {
+        display: grid;
+        grid-template-areas:
+        "left middle middle middle right";
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+        article {
+            padding: 50px 0;
+            grid-area: middle;
+        }
+    }
+}

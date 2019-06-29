@@ -7,11 +7,17 @@
 @import 'nav';
 @import 'hamburger-menu';
 
+// Body 
+@import 'body';
+
 // Home Page
 @import 'slideshow.scss';
 @import 'explore';
 @import 'buyer-guide';
 @import 'categories';
+
+// About Page
+@import 'about-intro';
 
 // Acoustic & Electric Guitars Page
 @import "quick-view";
