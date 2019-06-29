@@ -1,0 +1,90 @@
+// Locate style
+
+.locator-header {
+    margin: 30px 10px 30px 10px;
+    font-size: $form-text-header;
+    text-align: center;
+}
+
+.location-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    align-items: center;
+    margin: 10px 10px 30px 10px;
+
+}
+
+.location-group label {
+    font-size: $form-text-label;
+}
+
+.form-control input[type=text] {
+    width: 300px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 20px auto;
+    
+}
+
+.form-control {
+    width: 300px;
+    margin: 10px;
+    align-content: center;
+    
+}
+
+.form-control option {
+    width: 0;
+    margin: 10px;
+    
+
+}
+
+.current-location {
+    width: 200px;
+   
+}
+
+.btn-submit {
+    margin: 0 auto;
+}
+
+// Contact form style
+
+.contact-header {
+    margin: 30px 10px 30px 10px;
+    font-size: $form-text-header;
+    text-align: center;
+}
+
+.contact-text  {
+    font-size: .9em;
+    text-align: center;
+    padding: 5px 12px 30px 12px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    margin: 10px 10px 30px 10px
+}
+
+.contact-form label {
+    padding-left: 12px;
+}
+
+.contact-control {
+    width: 310px;
+}
+
+.contact-message {
+    width: 310px;
+    height: 300px;
+}
+
+.contact-group {
+    font-size: $form-text-label;
+}
