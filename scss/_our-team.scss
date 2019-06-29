@@ -1,0 +1,87 @@
+// Our Team Section in About Page Styles
+.our-team {
+    article {
+
+        span {
+            padding: 20px 25px;
+        }
+    }
+    
+}
+
+.founder {
+    @include home-section-style;
+    @include home-article-style;
+    height: 50%;
+
+    article {
+        span {
+            padding: 40px 25px;
+        }
+    }
+}
+
+.ceo {
+    @include home-section-style;
+    @include home-article-style;
+    height: 50%;
+
+    article {
+        span {
+            padding: 40px 25px;
+        }
+    }
+}
+
+.cmo {
+    @include home-section-style;
+    @include home-article-style;
+    height: 50%;
+
+    article {
+        span {
+            padding: 40px 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .founder {
+        @include home-section-grid;
+        grid-template-areas:
+        "image     article" ;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+
+        img {
+            margin: 0;
+        }
+
+    }
+
+    .ceo {
+        @include home-section-grid;
+        grid-template-areas:
+        "article    image";
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+
+        img {
+            margin: 0;
+        }
+    }
+
+    .cmo {
+        @include home-section-grid;
+        grid-template-areas:
+        "image     article" ;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+
+        img {
+            margin: 0;
+        }
+
+    }
+
+}

@@ -3,6 +3,7 @@
 .about-intro {
     @include home-section-style;
     @include home-article-style;
+    margin-bottom: 0;
 
     height: 50%;
 
