@@ -15,7 +15,7 @@ $('#menu').click(function(){
 
 // Create a media query list using
 // matchMedia
-const mql = window.matchMedia('(min-width: 1022px)');
+const mql = window.matchMedia('(min-width: 1024px)');
 
 // Add a Media Query Listener to the 
 // above media query list
