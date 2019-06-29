@@ -1,0 +1,41 @@
+// Locate style
+
+.locator-header {
+    margin: 10px;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+
+
+.locate-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    align-items: center;
+
+}
+
+.form-group label {
+    font-size: 1.5em;
+}
+
+input[type=text] {
+    width: 90%;
+    resize: vertical;
+    border-radius: 5px;
+    text-align: left;
+    margin: 20px;
+    
+}
+
+.form-control {
+    width: 90%;
+    margin: 20px;
+}
+
+.btn-info,
+.btn-submit {
+    width: 90%;
+    margin: 20px;
+}

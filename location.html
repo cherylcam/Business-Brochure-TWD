@@ -31,6 +31,7 @@
             </nav>
 
             <nav class="sub-nav" id="sub-nav">
+                <a href="#0" class="search-icon"><i class="fas fa-search"></i></a>
                 <a href="/location.html" class="location-icon"><i class="fas fa-map-marker-alt"></i></a>
                 <a href="/location.html" class="find-a-dealer"><i class="fas fa-map-marker-alt"></i>Find a Dealer</a>
                 <select>
@@ -45,16 +46,16 @@
             </button>
         </header>
         
-        <h1>Global Dealer Locator</h1>
+        <h1 class="locator-header">Global Dealer Locator</h1>
 
-        <form>
+        <form class="locate-form">
             <div class="form-group">
                 <label for="location">Location</label>
                 <input type="text" class="form-control" id="location" placeholder="Enter your current Location...">
                 <button type="button" class="btn btn-info current-location">Use my current location</button>
             </div>
 
-            <h2>or</h2>
+            <h2 class="locator-header">or</h2>
 
             <div class="form-group">
                 <label for="country">Country</label>
@@ -322,7 +323,30 @@
     </div>
 
     <footer>
-        <span>2019 &copy; Cheryl Guitars</span>
+        <div class="footer-top-row">
+            <nav class="footer-nav" id="footer-nav">
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/acoustic.html">Acoustic</a></li>
+                    <li><a href="/electric.html">Electric</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>     
+            </nav>
+            <div class="footer-social-media">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+        </div>
+
+        <div class="footer-bottom-row">
+            <span>&copy; 2019 Cheryl Guitars</span>
+            <div class="policy-tems">
+                <a href="#0">Privacy Policy</a>
+                <span>|</span>
+                <a href="#0">Terms & Conditions</a>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
