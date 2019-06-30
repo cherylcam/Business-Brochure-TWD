@@ -13,6 +13,7 @@
     @include home-section-style;
     @include home-article-style;
     height: 50%;
+    background-color: rgba(234, 229, 222, 1);
 
     article {
         span {
@@ -26,6 +27,11 @@
     @include home-article-style;
     height: 50%;
 
+    img {
+        align-self: end;
+        justify-self: end;
+    }
+
     article {
         span {
             padding: 40px 25px;
@@ -37,6 +43,7 @@
     @include home-section-style;
     @include home-article-style;
     height: 50%;
+    background-color: rgba(234, 229, 222, 1);
 
     article {
         span {
