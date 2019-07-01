@@ -22,15 +22,15 @@
     cursor: pointer;
     position: absolute;
     top: 40%;
-    padding: 10px;
+    padding: 5px;
     margin: 2px;
     width: auto;
     font-weight: bold;
     outline: red;
     color: white;
-    transition: 0.7s ease;  
-    font-size: 1.5em;
-    border-radius: 100px;
+    transition: 0.5s ease;  
+    font-size: 2em;
+    background-color: rgba(white, 0.5);
 }
 
 .slideshow-next {
@@ -39,18 +39,7 @@
 
 .slideshow-prev:hover,
 .slideshow-next:hover {
-    background-color: rgba(255, 255, 255, 0.356);
-}
-
-.slideshow-caption h2 {
-    font-size: $header-font-size;
-    padding: 10px;
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
+    background-color: rgba(white, 1);
 }
 
 .dot {
@@ -85,6 +74,11 @@
     right: 0;
     margin: auto;
     
+}
+
+.slideshow-caption {
+    @include banner-caption;
+    @include button;
 }
 
 

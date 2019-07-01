@@ -7,97 +7,71 @@
 var slideIndex=0;
 var $slides = $('.slides');
 var $dot = $('.dot');
-// console.log($slides);
+var timer = null;
 
 showSlides();
 
 $('.slideshow-next').click(function(){
-    // console.log(slideIndex);
-    slideIndex++;
+    clearTimeout(timer);
     showSlides();
 });
 
 $('.slideshow-prev').click(function(){
-    // console.log(slideIndex);
-    slideIndex--;
-
-    if(slideIndex < 0){
-        slideIndex = $slides.length - 1;
-    }
-
-    showSlides();
-
+    clearTimeout(timer);
+    prevSlide();
 });
 
 $('.dot').click(function(){
     console.log($(this));
     if ($(this).hasClass('dot-1')){
-        //first image
-        console.log("true");
-        for (i=0; i<$slides.length; i++){
-            $slides[i].style.display="none";
-        }
-
-        $slides[0].style.display="block";
+        // First Image
+        clearTimeout(timer);
+        slideIndex = 0;
+        showSlides();
     
     }else if($(this).hasClass('dot-2')){
-        //second image
-        for (i=0; i<$slides.length; i++){
-            $slides[i].style.display="none";
-        }
-
-        $slides[1].style.display="block";
+        // Second Image
+        clearTimeout(timer);
+        slideIndex = 1;
+        showSlides()
 
     }else if($(this).hasClass('dot-3')){
-        //third image
-        for (i=0; i<$slides.length; i++){
-            $slides[i].style.display="none";
-        }
+        // Third Image
+        clearTimeout(timer);
+        slideIndex = 2;
+        showSlides()
 
-        $slides[2].style.display="block";
     }else{
-        //fourth image
-        for (i=0; i<$slides.length; i++){
-            $slides[i].style.display="none";
-        }
-
-        $slides[3].style.display="block";
+        // Fourth Image
+        clearTimeout(timer);
+        slideIndex = 3;
+        showSlides();
     }
 });
-    
-
 
 function showSlides(){
-    // console.log("show slides: ", slideIndex);
-
     for (i=0; i<$slides.length; i++){
         $slides[i].style.display="none";
     }
 
     if(slideIndex === $slides.length){
         slideIndex = 0;
-        
-    }    
-    $slides[slideIndex].style.display = "block";
-    // setTimeout(showSlides, 3000);
+    }  
+    $slides.eq(slideIndex).fadeIn(2000);
+    slideIndex++;
+    timer = setTimeout(showSlides, 5000);
 };
 
+function prevSlide(){
+    slideIndex = slideIndex - 2;
+    for (i=0; i<$slides.length; i++){
+        $slides[i].style.display="none";
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if(slideIndex < 0){
+        slideIndex = $slides.length - 1;
+    }  
+    $slides.eq(slideIndex).fadeIn(2000);
+    slideIndex++;
+    timer = setTimeout(showSlides, 5000);
+};
