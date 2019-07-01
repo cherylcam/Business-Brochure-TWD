@@ -10,6 +10,7 @@
 
 .slides {
     display: none;
+    position: relative;
 }
 
 .slideshow-img {
@@ -23,14 +24,14 @@
     position: absolute;
     top: 40%;
     padding: 5px;
-    margin: 2px;
     width: auto;
-    font-weight: bold;
-    outline: red;
-    color: white;
     transition: 0.5s ease;  
     font-size: 2em;
-    background-color: rgba(white, 0.5);
+    background-color: rgba(grey, 0.3);
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    color: white;
 }
 
 .slideshow-next {
@@ -39,7 +40,7 @@
 
 .slideshow-prev:hover,
 .slideshow-next:hover {
-    background-color: rgba(white, 1);
+    background-color: rgba(black, 1);
 }
 
 .dot {
@@ -55,7 +56,7 @@
 }
 
 .active, .dot:hover {
-    background-color: rgba(202, 202, 202, 0.705);
+    background-color: rgba($brand-color, 1);
 }
 
 .slideshow-img {
@@ -67,13 +68,12 @@
 
 .slideshow-btn {
     display: flex;
-    justify-content: center;
+    background-color: rgba(grey, 0.3);
+    border-radius: 5px;
+    padding: 10px;
     position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    
+    right: 50%; 
+    bottom: 50px;
 }
 
 .slideshow-caption {
@@ -85,15 +85,3 @@
     @include banner-caption-right;
     @include button;
 }
-
-
-@-webkit-keyframes fade {
-    from {opacity: .5}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .5}
-    to {opacity: 1}
-}
-
