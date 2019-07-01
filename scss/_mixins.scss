@@ -85,3 +85,25 @@
             margin-bottom: 50px;
         }
 }
+
+@mixin banner-caption-right {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translate(0, -50%);
+    color: white;
+    border-left: 3px solid $brand-color;
+    padding-left: 25px;
+    text-shadow: 1px 1px 3px grey;
+
+    h2 {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1.75em;
+        margin-bottom: 50px;
+    }
+}

@@ -81,6 +81,11 @@
     @include button;
 }
 
+.slideshow-caption-right {
+    @include banner-caption-right;
+    @include button;
+}
+
 
 @-webkit-keyframes fade {
     from {opacity: .5}
