@@ -33,10 +33,6 @@ header {
             margin: 0;
         }
 
-        // @at-root li{
-        //     // border-top: 1px solid black;
-        // }
-
         li {
             list-style: none;
             text-align: center;
@@ -71,8 +67,6 @@ header {
                 margin: 0 20px;
             }
         }
-
-
     }
 
     .sub-nav {
@@ -144,12 +138,19 @@ header {
             grid-template-columns: 1fr 1fr;
             width: 290px;
 
+            .fa-map-marker-alt:before {
+                margin-right: 5px;
+            }
+
 
             .find-a-dealer {
                 display: block;
-                color: white;
+                color: black;
                 text-decoration: none;
                 transition: all 0.3s ease;
+                // background-color: black;
+                
+                
 
             }
         }
