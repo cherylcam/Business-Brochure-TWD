@@ -4,6 +4,10 @@ header {
     display: grid;
     grid-template-columns: 2fr 100px 40px;
     padding: 0 20px;
+    box-shadow: 0 10px 15px -15px black;
+    position: relative;
+    z-index: 999;
+
     .logo {
         line-height: $header-height;
         display: block;
