@@ -1,8 +1,8 @@
 // Header + Navbar Styles For Mobile
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 100px 40px;
     padding: 0 20px;
     .logo {
         line-height: $header-height;
@@ -105,11 +105,56 @@ header {
 
 // Main Nav for desktop
 
-// @media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px){
 
-//     .location-icon{
-//         display: none;
-//     }
+    header {
+        grid-template-columns: 200px 1fr 300px;
+
+        .location-icon{
+            display: none;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        
+        #main-nav {
+            display: block;
+            margin-top: 0 ;
+            height: $header-height;
+            position: inherit;
+            width: 500px;
+
+            .social-media {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 500px;
+            }
+            
+        }
+
+        #sub-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 290px;
+
+
+            .find-a-dealer {
+                display: block;
+                color: white;
+                text-decoration: none;
+                transition: all 0.3s ease;
+
+            }
+        }
+    }
+} 
 
 //     .main-nav {
 //         height: $header-height;
