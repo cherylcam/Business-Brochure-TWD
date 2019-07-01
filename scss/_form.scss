@@ -1,7 +1,7 @@
 // Locate style
 
 .location-background-image {
-    background-image: url('../images/world-map.jpg');
+    background-image: url('../images/galaxy-map.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -23,7 +23,7 @@
     flex-direction: column;
     text-align: center;   
     align-items: center;
-    margin: 10px 10px 30px 10px;
+    margin: 0px;
 
 }
 
@@ -56,9 +56,10 @@
 .current-location {
     background-color: $brand-color;
     font-family: $font-stack;
-    border-color: #dc3545;
+    @include button;
    
 }
+
 
 .current-location:hover,
 .current-location:focus,
@@ -68,9 +69,10 @@
 }
 
 .btn-submit {
+    @include button;
     margin: 0 auto;
-    background-color: $brand-color;
-    font-family: $font-stack;
+    margin-bottom: 20px;
+    background-color: #660000;
 }
 
 // Contact form style
@@ -92,7 +94,7 @@
     flex-direction: column;
     text-align: left;
     align-items: center;
-    margin: 10px 10px 30px 10px
+    margin: 10px 10px 1px 10px
 }
 
 .contact-form label {
