@@ -21,6 +21,10 @@ $delay: .5s;
 $speed: $delay * 2;
 $easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
+// Variables for Navbar Desktop Screen
+$navbar-height: 50px;
+$navbar-line-height: 27px;
+
 // Link Hover Selector
 $link-hover-selector: '&:hover, &:focus, &:active';
 
