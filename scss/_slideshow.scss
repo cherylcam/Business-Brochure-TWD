@@ -86,3 +86,39 @@
     @include banner-caption-right;
     @include button;
 }
+
+
+@media (max-width: 800px) {
+    .slideshow-caption h2,
+    .slideshow-caption-right h2{
+        font-size: 1em;
+    }
+
+    .slideshow-caption p,
+    .slideshow-caption-right p {
+        font-size: .75em;
+    }
+
+    .slideshow-caption button,
+    .slideshow-caption-right button {
+        font-size: .4em;
+    }
+}
+
+@media (max-width: 400px )  {
+
+    .slideshow-caption h2,
+    .slideshow-caption-right h2{
+        font-size: .8em;
+    }
+
+    .slideshow-caption p,
+    .slideshow-caption-right p {
+        font-size: .55em;
+    }
+
+    .slideshow-caption button,
+    .slideshow-caption-right button {
+        font-size: .4em;
+    }
+}

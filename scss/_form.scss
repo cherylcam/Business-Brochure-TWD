@@ -1,5 +1,17 @@
 // Locate style
 
+.location-background-image {
+    background-image: url('../images/world-map.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+
+    
+}
+
+    
 .locator-header {
     margin: 30px 10px 30px 10px;
     font-size: $form-text-header;
@@ -42,12 +54,23 @@
 }
 
 .current-location {
-    width: 200px;
+    background-color: $brand-color;
+    font-family: $font-stack;
+    border-color: #dc3545;
    
+}
+
+.current-location:hover,
+.current-location:focus,
+.current-location:active {
+    background-color:#dc3545;
+    
 }
 
 .btn-submit {
     margin: 0 auto;
+    background-color: $brand-color;
+    font-family: $font-stack;
 }
 
 // Contact form style
