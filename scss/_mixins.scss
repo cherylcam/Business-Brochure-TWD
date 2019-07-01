@@ -67,7 +67,7 @@
 @mixin banner-caption {
         position: absolute;
         top: 50%;
-        left: 15%;
+        left: 10%;
         transform: translate(0, -50%);
         color: white;
         border-left: 3px solid $brand-color;
@@ -89,7 +89,7 @@
 @mixin banner-caption-right {
     position: absolute;
     top: 50%;
-    right: 15%;
+    right: 10%;
     transform: translate(0, -50%);
     color: white;
     border-left: 3px solid $brand-color;
