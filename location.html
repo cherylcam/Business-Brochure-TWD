@@ -52,21 +52,26 @@
         
     <div class="location-background-image">
         <div class="location-background-wrapper">
-            <div class="location-wrap-text">
+ 
                 <h1 class="locator-header">Global Dealer Locator</h1>
 
+            <div class="location-form-wrap">
                 <form class="location-form">
-                    <div class="location-group">
-                        <label for="location">Location</label>
-                        <input type="text" class="form-input" id="location" placeholder="Enter your current Location...">
-                        <button type="button" class="btn btn-info current-location">Use my current location</button>
-                    </div>
 
-                    <h2>or</h2>
+                    <div class="location-group">
+
+                        <label for="location">Location</label>
+                        <input type="text" class="form-index" id="location" placeholder="Enter your current Location...">
+
+                    </div>
+                    
+                    <button type="button" class="current-location-button">Use my current location</button>
+
+                    <h2 class="location-header">or</h2>
 
                     <div class="location-group location-selection">
                         <label for="country">Country</label>
-                        <select class="form-input" id="country">
+                        <select class="form-index form-dropdown" id="country">
                             <option selected disabled>Choose a country...</option>
                             <option value="AF">Afghanistan</option>
                             <option value="AX">Åland Islands</option>
@@ -322,13 +327,13 @@
 
                     <div class="location-group">
                         <label for="city">City</label>
-                        <input type="text" class="form-input" id="city" placeholder="Enter your city...">
+                        <input type="text" class="form-index" id="city" placeholder="Enter your city...">
                     </div> 
 
-                    <button type="button" class="btn btn-danger btn-submit">Submit</button>
+                    <button type="button" class="form-button-submit">Submit</button>
                 </form>
+            </div>
         </div>
-    </div>
     </div>
 
     <footer>
