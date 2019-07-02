@@ -5,6 +5,7 @@
     .banner-caption {
         @include banner-caption;
         left: 10%;
+        display: none;
     }
 }
 
@@ -36,8 +37,11 @@
     }
 }
 
-@media only screen and (max-width: 1024px){
-    .banner-caption {
-        display: none;
+@media only screen and (min-width: 1024px){
+    
+    .banner {
+        .banner-caption {
+            display: block;
+        }
     }
 }
