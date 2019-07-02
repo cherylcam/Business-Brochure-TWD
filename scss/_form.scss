@@ -1,12 +1,10 @@
 // Location style
 
 .location-background-image {
-    background-image: url('../images/galaxy-map.jpg');
+    background-image: url('../images/galaxy-map-opacity.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
+    background-size: cover; 
     z-index: -1;
     @include button;
 
@@ -14,6 +12,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        
 
         .locator-header {
             margin: 30px 0px 30px 0px;
@@ -28,6 +27,7 @@
             justify-content: center;
             text-align: center;
             font-family: $font-stack;
+            padding-bottom: 25px;
 
             
             .location-header {
@@ -42,12 +42,17 @@
                 grid-gap: 20px;
                 padding-left: 20px;
                 padding-right: 20px;
-                padding-bottom: 20px;
+               
 
 
                 .location-group {
                     display: grid;
                     grid-column: span 2;
+
+                    label {
+                        font-size: 1.5em;
+                       
+                    }
 
                     .form-index {
                         @include form-index;
@@ -105,7 +110,7 @@
         grid-gap: 20px;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
     }
 
         .form-group {
@@ -136,7 +141,7 @@
             justify-self: center;
         }
 
-     @media (max-width: 500px) {
+     @media (min-width: 500px) {
                 .form-group {
                     grid-column: 1 / 3;
                 }

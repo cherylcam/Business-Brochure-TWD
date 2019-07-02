@@ -88,7 +88,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
     .slideshow-caption h2,
     .slideshow-caption-right h2{
         font-size: 1em;
@@ -105,7 +105,7 @@
     }
 }
 
-@media (max-width: 400px )  {
+@media (min-width: 400px )  {
 
     .slideshow-caption h2,
     .slideshow-caption-right h2{
