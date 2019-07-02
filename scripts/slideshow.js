@@ -1,9 +1,5 @@
 // Slide Show Scripts
 
-// const $prev = document.getElementById('slideshow-prev');
-// const $next = document.getElementById('slideshow-next');
-
-
 var slideIndex=0;
 var $slides = $('.slides');
 var $dot = $('.dot');
@@ -22,7 +18,6 @@ $('.slideshow-prev').click(function(){
 });
 
 $('.dot').click(function(){
-    console.log($(this));
     if ($(this).hasClass('dot-1')){
         // First Image
         clearTimeout(timer);
