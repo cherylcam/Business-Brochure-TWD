@@ -177,19 +177,19 @@ header {
                 }
 
                 .find-a-dealer {
+                    
                     line-height: $navbar-line-height;
                     display: block;
                     color: white;
                     text-decoration: none;
-                    transition: all 0.3s ease;
+                    transition: all 0.5s ease;
                     background-color: black;
-                    border-radius: 5px;
-                    padding: 0 5px;
+                    padding: 0 10px;
                     margin-bottom: 20px;
 
                     #{$link-hover-selector} {
                         background-color: $brand-color;
-                    }
+                    }              
                 }
             }
         }
