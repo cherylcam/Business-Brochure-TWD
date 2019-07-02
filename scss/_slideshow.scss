@@ -92,7 +92,26 @@
 }
 
 
-@media (min-width: 800px) {
+
+
+@media only screen and (min-width: 320px) {
+    .slideshow-caption h2,
+    .slideshow-caption-right h2{
+        font-size: .7em;
+    }
+
+    .slideshow-caption p,
+    .slideshow-caption-right p {
+        font-size: .55em;
+    }
+
+    .slideshow-caption button,
+    .slideshow-caption-right button {
+        font-size: .4em;
+    }
+}
+
+@media only screen and (min-width: 400px) {
     .slideshow-caption h2,
     .slideshow-caption-right h2{
         font-size: 1em;
@@ -109,20 +128,40 @@
     }
 }
 
-@media (min-width: 400px )  {
+@media only screen and (min-width: 800px )  {
 
     .slideshow-caption h2,
     .slideshow-caption-right h2{
-        font-size: .8em;
+        font-size: 1.3em;
     }
 
     .slideshow-caption p,
     .slideshow-caption-right p {
-        font-size: .55em;
+        font-size: 1.05em;
     }
 
     .slideshow-caption button,
     .slideshow-caption-right button {
-        font-size: .4em;
+        font-size: .7em;
     }
 }
+
+
+@media only screen and (min-width: 1024px ) {
+
+    .slideshow-caption h2,
+    .slideshow-caption-right h2{
+        font-size: 2em;
+    }
+
+    .slideshow-caption p,
+    .slideshow-caption-right p {
+        font-size: 1.75em;
+    }
+
+    .slideshow-caption button,
+    .slideshow-caption-right button {
+        font-size: 1em;
+    }
+}
+
