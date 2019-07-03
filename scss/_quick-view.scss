@@ -83,6 +83,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     box-shadow: 0px 0px 2.5px 2.5px rgba(0,0,0,0.75);
+    z-index: 999999;
 }
 
 @media only screen and (min-width: 1024px){
