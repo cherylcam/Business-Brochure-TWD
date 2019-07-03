@@ -1,11 +1,13 @@
 // Slide show on index.html
-
-
+// image size - 320w x 214h
+// 400w x 267h
+// 800w x 534h
+// 1024w x 683h
 
 .slideshow {
     height: 0;
     overflow: hidden;
-    padding-top: 860px / 1920px * 100%;
+    padding-top: 1280px / 1920px * 100%;
     background: white;
     position: relative;
 }
@@ -133,6 +135,10 @@
 }
 
 @media only screen and (min-width: 800px )  {
+
+    .slideshow {
+        padding-top: 860px / 1920px * 100%;
+    }
 
     .slideshow-caption h2,
     .slideshow-caption-right h2{
