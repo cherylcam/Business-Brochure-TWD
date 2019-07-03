@@ -25,25 +25,26 @@ $('.dot').click(function(){
         // First Image
         clearTimeout(timer);
         slideIndex = 0;
-        showSlides();
+        dot(slideIndex);
+
     
     }else if($(this).hasClass('dot-2')){
         // Second Image
         clearTimeout(timer);
         slideIndex = 1;
-        showSlides()
+        dot(slideIndex);
 
     }else if($(this).hasClass('dot-3')){
         // Third Image
         clearTimeout(timer);
         slideIndex = 2;
-        showSlides()
+        dot(slideIndex);
 
     }else{
         // Fourth Image
         clearTimeout(timer);
         slideIndex = 3;
-        showSlides();
+        dot(slideIndex);
     }
 });
 
@@ -70,7 +71,6 @@ function showSlides(){
     }
 
     $('.dot').eq(slideIndex).css('background-color', '#660000');
-    
     slideIndex++;   
   
     timer = setTimeout(showSlides, 5000);
@@ -101,3 +101,11 @@ function prevSlide(){
 
     timer = setTimeout(showSlides, 5000);
 };
+
+function dot(index){
+    $slides.fadeOut();
+    $slides.eq(index).fadeIn();
+    $('.dot').css('background-color', 'white');
+    $('.dot').eq(index).css('background-color', '#660000');
+    showSlides();
+}
