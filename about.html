@@ -66,8 +66,15 @@
 
     <div class="banner" id="banner">
         <picture>
-            <!-- <source srcset media="(max-width: px)" -->
-            <img src="images/aboutBanner.jpg" alt="">
+            <source media="(min-width: 800px)" srcset="images/aboutBanner-1920.jpg">
+            <img src="aboutBanner-1920.jpg"
+                alt="About Page Banner"
+                srcset="
+                images/aboutBanner-1024.jpg 1024w,
+                images/aboutBanner-900.jpg 900w,
+                images/aboutBanner-800.jpg 800w,
+                images/aboutBanner-400.jpg 400w"
+                sizes="(min-width: 2000px) 2000px, 100vw">
         </picture>
 
         <div class="banner-caption" id="banner-caption">
