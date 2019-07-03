@@ -21,31 +21,9 @@ $('.slideshow-prev').click(function(){
 });
 
 $('.dot').click(function(){
-    if ($(this).hasClass('dot-1')){
-        // First Image
-        clearTimeout(timer);
-        slideIndex = 0;
-        dot(slideIndex);
-
-    
-    }else if($(this).hasClass('dot-2')){
-        // Second Image
-        clearTimeout(timer);
-        slideIndex = 1;
-        dot(slideIndex);
-
-    }else if($(this).hasClass('dot-3')){
-        // Third Image
-        clearTimeout(timer);
-        slideIndex = 2;
-        dot(slideIndex);
-
-    }else{
-        // Fourth Image
-        clearTimeout(timer);
-        slideIndex = 3;
-        dot(slideIndex);
-    }
+    clearTimeout(timer);
+    slideIndex = $(this).index();
+    dot(slideIndex);
 });
 
 function showSlides(){
