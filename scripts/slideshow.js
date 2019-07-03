@@ -21,30 +21,9 @@ $('.slideshow-prev').click(function(){
 });
 
 $('.dot').click(function(){
-    if ($(this).hasClass('dot-1')){
-        // First Image
-        clearTimeout(timer);
-        slideIndex = 0;
-        showSlides();
-    
-    }else if($(this).hasClass('dot-2')){
-        // Second Image
-        clearTimeout(timer);
-        slideIndex = 1;
-        showSlides()
-
-    }else if($(this).hasClass('dot-3')){
-        // Third Image
-        clearTimeout(timer);
-        slideIndex = 2;
-        showSlides()
-
-    }else{
-        // Fourth Image
-        clearTimeout(timer);
-        slideIndex = 3;
-        showSlides();
-    }
+    clearTimeout(timer);
+    slideIndex = $(this).index();
+    dot(slideIndex);
 });
 
 function showSlides(){
@@ -70,7 +49,6 @@ function showSlides(){
     }
 
     $('.dot').eq(slideIndex).css('background-color', '#660000');
-    
     slideIndex++;   
   
     timer = setTimeout(showSlides, 5000);
@@ -101,3 +79,11 @@ function prevSlide(){
 
     timer = setTimeout(showSlides, 5000);
 };
+
+function dot(index){
+    $slides.fadeOut();
+    $slides.eq(index).fadeIn();
+    $('.dot').css('background-color', 'white');
+    $('.dot').eq(index).css('background-color', '#660000');
+    showSlides();
+}
