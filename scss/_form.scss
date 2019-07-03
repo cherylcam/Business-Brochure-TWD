@@ -75,7 +75,16 @@
 
 // Contact form style
 
-.contact-wrapper-text {
+.contact-background-image{
+
+    background-image: url('../images/contact-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+    z-index: -1;
+
+    .contact-wrapper-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -92,7 +101,7 @@
             width: 100%;;
             justify-content: center;
             text-align: center;
-            font-size: .9em;
+            font-size: 1em;
             padding: 5px 12px 30px 12px;
             
         }
@@ -104,6 +113,10 @@
     justify-content: center;
     align-content: center;
     @include button;
+
+    label {
+        font-weight: bold;
+    }
 
     .contact-form  {
         display: grid;
@@ -122,6 +135,7 @@
         
             .contact-index {
                 @include form-index;
+                border: 1px solid black;
             }
 
 
@@ -135,6 +149,7 @@
                 .contact-msg {
                     @include form-index;
                     height: 200px;
+                    border: 1px solid black;
                 }
             }
         
@@ -155,3 +170,6 @@
      }
 
 }
+
+}
+

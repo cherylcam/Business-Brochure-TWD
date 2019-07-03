@@ -66,8 +66,15 @@
 
         <div class="banner" id="banner">
             <picture>
-                <!-- <source srcset media="(max-width: px)" -->
-                <img src="images/electricBanner-6.jpg" alt="">
+                <source media="(min-width: 800px)" srcset="images/electricBanner-6.jpg">
+                <img src="electricBanner-6.jpg"
+                    alt="Electric Guitar"
+                    srcset="
+                    images/electricBanner-6-1024w.jpg 1024w,
+                    images/electricBanner-6-900w.jpg 900w,
+                    images/electricBanner-6-800w.jpg 800w,
+                    images/electricBanner-6-400w.jpg 400w"
+                    sizes="(min-width: 2000px) 2000px, 100vw">
             </picture>
 
             <div class="banner-caption" id="banner-caption">
