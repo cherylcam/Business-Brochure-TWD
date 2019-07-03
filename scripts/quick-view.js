@@ -7,6 +7,8 @@ $(".popup").click(function(){
 
 $(".close-quick-view").click(function(){
     console.log($(this).parent());
+    $('.guitar-front').show();
+    $('.guitar-back').hide();
     $(this).parent().fadeOut();
 });
 
