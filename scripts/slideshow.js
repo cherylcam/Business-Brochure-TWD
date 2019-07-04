@@ -7,23 +7,48 @@ var timer = null;
 var start = true;
 var startPrev = true;
 var startNext = false;
+var fired = false;
 
 showSlides();
 
 $('.slideshow-next').click(function(){
-    clearTimeout(timer);
-    showSlides();
+    if(fired === true){
+        return;
+    }else{
+        fired = true;
+        console.log(fired);
+        clearTimeout(timer);
+        showSlides();
+    }
+    setTimeout(function(){
+        fired = false;
+        console.log(fired);
+    }, 400)
 });
 
 $('.slideshow-prev').click(function(){
-    clearTimeout(timer);
-    prevSlide();
+    if(fired === true){
+        return;
+    }else{
+        fired = true;
+        console.log(fired);
+        clearTimeout(timer);
+        prevSlide();
+    }
+    setTimeout(function(){
+        fired = false;
+        console.log(fired);
+    }, 400)
 });
 
 $('.dot').click(function(){
-    clearTimeout(timer);
-    slideIndex = $(this).index();
-    dot(slideIndex);
+    if($(this).index()+1 === slideIndex){
+        return;
+    }else{
+        clearTimeout(timer);
+        slideIndex = $(this).index();
+        dot(slideIndex);
+    }
 });
 
 function showSlides(){
