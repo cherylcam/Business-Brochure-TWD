@@ -57,6 +57,7 @@ header {
                 #{$link-hover-selector} {
                     text-decoration: none;
                     color: $brand-color;
+                    border-bottom: 2px solid $brand-color;
                 }
             }
 
