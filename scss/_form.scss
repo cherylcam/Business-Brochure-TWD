@@ -87,22 +87,22 @@
     justify-content: center;
     flex-direction: column;
 
-        .contact-header {
-            margin: 30px 0px 30px 0px;
-            width: 100%;
-            font-size: $form-text-header;
-            text-align: center;
-            justify-content: center;
-        }
+    .contact-header {
+        margin: 30px 0px 30px 0px;
+        width: 100%;
+        font-size: $form-text-header;
+        text-align: center;
+        justify-content: center;
+    }
 
-        .contact-text {
-            width: 100%;;
-            justify-content: center;
-            text-align: center;
-            font-size: 1em;
-            padding: 5px 12px 30px 12px;
-            
-        }
+    .contact-text {
+        width: 100%;;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+        padding: 5px 12px 30px 12px;
+        
+    }
 
 }
 
