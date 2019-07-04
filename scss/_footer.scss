@@ -7,6 +7,10 @@ footer {
     padding: 0 20px;
     line-height: 40px;
 
+    .footer-top-row {
+        padding-top: 10px;
+    }
+
     .footer-nav {
         flex: 1;
 
@@ -48,6 +52,7 @@ footer {
     .footer-bottom-row {
         text-align: center;
         font-size: 0.8em;
+        padding-bottom: 10px;
 
         .policy-tems {
             a {
