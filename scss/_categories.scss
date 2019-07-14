@@ -5,10 +5,15 @@
     @include home-article-style;
     @include button;
     margin: 0;
+    
 
     article {
         align-items: center;
         margin-bottom: 50px;
+
+        a {
+            text-decoration: none;
+        }
 
         img {
             width: 300px;

@@ -6,6 +6,10 @@
         @include banner-caption;
         left: 10%;
         display: none;
+        
+        a {
+            text-decoration: none;
+        }
     }
 }
 

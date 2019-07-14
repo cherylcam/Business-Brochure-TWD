@@ -163,7 +163,7 @@ header {
 
             #sub-nav {
                 display: flex;
-                flex-direction: rows;
+                flex-direction: row;
                 grid-area: bottom-right;
                 height: $navbar-height;
                 justify-content: flex-end;

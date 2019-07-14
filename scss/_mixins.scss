@@ -57,6 +57,21 @@
             background-color: black;
         }
     }
+
+    .button {
+       
+        background-color: $brand-color;
+        border: none;
+        color: white;
+        padding: 5px 25px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+
+        &:hover {
+            background-color: black;
+            
+        }
+    }
 }
 
 @mixin hover-state-text {

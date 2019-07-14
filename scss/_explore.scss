@@ -1,5 +1,9 @@
 .explore {
     @include button;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .workshops-events {

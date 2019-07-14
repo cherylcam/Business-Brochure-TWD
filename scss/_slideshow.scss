@@ -10,6 +10,10 @@
     padding-top: 1280px / 1920px * 100%;
     background: white;
     position: relative;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .slides {
