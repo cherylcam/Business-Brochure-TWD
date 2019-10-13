@@ -101,8 +101,13 @@ header {
         }
     }
 }
-.show .main-nav {
-    display: block !important;
+
+body.show .navbar .main-nav {
+    display: block;
+}
+
+.show{
+    overflow: hidden;
 }
 
 

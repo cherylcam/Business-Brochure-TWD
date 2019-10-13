@@ -1,9 +1,4 @@
 @mixin home-article-style {
-    margin-bottom: 50px;
-
-    img {
-        margin-bottom: 50px;
-    }
 
     article {
         display: flex;
@@ -11,6 +6,9 @@
         justify-content: center;
         text-align: center;
         align-items: center;
+        padding: 50px 0;
+
+        grid-area: article;
 
         h1 {
             font-size: 2em;
@@ -25,6 +23,17 @@
             padding: 50px 25px;
             text-align: left;
         }
+    }
+}
+
+@mixin explore-grid {
+    height: 50%;
+    display: grid;
+    grid-template-areas: "article"
+                         "image";
+
+    img{
+        grid-area: image;
     }
 }
 

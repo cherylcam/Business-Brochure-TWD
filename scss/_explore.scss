@@ -9,14 +9,13 @@
 .workshops-events {
     @include home-section-style;
     @include home-article-style;
-    height: 50%;
+    @include explore-grid;
 }
 
 .artists {
     @include home-section-style;
     @include home-article-style;
-
-    height: 50%;
+    @include explore-grid;
 }
 
 @media only screen and (min-width: 1024px){

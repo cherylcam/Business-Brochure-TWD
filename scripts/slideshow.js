@@ -76,7 +76,7 @@ function showSlides(){
     $('.dot').eq(slideIndex).css('background-color', '#660000');
     slideIndex++;   
   
-    timer = setTimeout(showSlides, 5000);
+    timer = setTimeout(showSlides, 5000000);
 };
 
 function prevSlide(){
